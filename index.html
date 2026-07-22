@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Документация KeyFire</title>
+<meta name="description" content="Документация открытых инструментов KeyFire: EDT-Bridge для 1С:Предприятия и XBSL для 1С:Элемента.">
+<style>
+  :root{
+    --bg:#131215; --surface:#1b1a1f; --line:rgba(255,255,255,.10);
+    --text:#f4f1ec; --muted:#948d82; --accent:#f08c1e;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#fbfaf8; --surface:#ffffff; --line:rgba(33,28,22,.12);
+           --text:#1e1b17; --muted:#6e665b; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;}
+  .wrap{max-width:760px;margin:0 auto;padding:72px 24px 64px}
+  h1{font-size:30px;line-height:1.25;margin:0 0 10px;letter-spacing:-.01em}
+  .sub{color:var(--muted);margin:0 0 40px}
+  .card{display:block;text-decoration:none;color:inherit;background:var(--surface);
+    border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin:0 0 16px;
+    transition:border-color .15s,transform .15s}
+  .card:hover{border-color:var(--accent);transform:translateY(-1px)}
+  .name{font-size:19px;font-weight:700;margin:0 0 6px;display:flex;align-items:center;gap:10px}
+  .tag{font-size:12px;font-weight:600;color:var(--accent);border:1px solid var(--accent);
+    border-radius:20px;padding:1px 9px;letter-spacing:.02em}
+  .desc{color:var(--muted);font-size:14.5px;margin:0}
+  footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);
+    color:var(--muted);font-size:13.5px}
+  footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Документация KeyFire</h1>
+  <p class="sub">Открытые инструменты для разработки на платформах 1С.</p>
+
+  <a class="card" href="/edt-bridge/">
+    <p class="name">EDT-Bridge <span class="tag">1С:Предприятие</span></p>
+    <p class="desc">Плагин 1C:EDT, который отдаёт живую семантическую модель среды
+      ИИ-агентам по MCP: собственные диагностики среды, метаданные и типы, проверка
+      запросов по метаданным проекта, правки штатным движком EDT и отладка запущенной базы.</p>
+  </a>
+
+  <a class="card" href="/xbsl/">
+    <p class="name">XBSL <span class="tag">1С:Элемент</span></p>
+    <p class="desc">Инструментарий для XBSL: линтер с автоматическими исправлениями,
+      LSP-сервер, поиск по документации платформы и заготовки метаданных, плюс
+      расширение VS Code на том же движке.</p>
+  </a>
+
+  <footer>
+    Исходники и релизы – на <a href="https://github.com/keyfire">github.com/keyfire</a>.
+    О проектах и практике – <a href="https://keyfire.ru">keyfire.ru</a>.
+  </footer>
+
+</div>
+</body>
+</html>
